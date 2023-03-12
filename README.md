@@ -50,7 +50,7 @@ Methodology
   
 4. **Create and train a Feed Forward Network.**<br>
   Define an Abstract Base Class called BaseCuriosity, create concrete class called CuriousFFN which inherits from the ABC and
-  nn.Module, initialize attributes as defined by ABC. Modify the __call__ method to allow 'standard' and 'curious' modes, define 
+  nn.Module, initialize attributes as defined by ABC. Modify the `__call__` method to allow 'standard' and 'curious' modes, define 
   forward (standard mode) and curiosity methods (curious mode), instantiate the class and train the model on non-manipulated data, 
   visualize the performance.
   
@@ -58,13 +58,11 @@ Methodology
   Apply transformations to the test image and predict with both modes to validate whether the model is functional or not.
   
 6. **Define versatility score as a performance measure for quantifying the impact of artificial curiosity on model performance.**<br>
-  Versatility score is the difference between performance of the model in curious and non-curious modes. Minimum and Maximum value of 
-  versatility score are 0 and 1.
+  Versatility score is the difference between performance of the model in curious and non-curious modes. Minimum and Maximum value of versatility score are 0 and 1. Any of the standard performance measures like accuracy score or others can be used for calculating versatility score.
   
 7. **Prepare the test images.**<br>
-  Define rules for transformations to be applied on test data that complies with the scope of the defined curiosity, generate mask 
-  to Flip 50% of the test images, apply transformation to the images in the testloader, as a preliminary check for conducting 
-  experiments predict using standard and curious modes, finally record the performance and calculate versatility.
+  Define rules for transformations to be applied on test data that complies with the scope of the defined curiosity, apply  transformation to the images in the testloader, as a preliminary check for conducting experiments predict using standard and curious
+  modes, finally record the performance and calculate versatility.
   
 8. **Conduct an experiment to test the impact of artificial curiosity on model performance.**<br>
   Pick 'n' random samples from manipulated images (Random Sampling with replacement), predict in standard mode and measure 
@@ -74,3 +72,8 @@ Methodology
 9. **Conduct a hypothesis test.**<br>
   Check the assumptions of t-test, test the null hypothesis that "The performance of the standard and curious modes in predicting
   the manipulated images is not significantly different" and then present the results of the experiment.
+  
+Results
+-------
+Accuracy score was used to calculate Versatility score, therefore in the experiment Versatility score is defined as the difference
+between accuracy of curious and non-curious modes of the model. In standard mode the model achieved average accuracy of 0.25 while the curious mode achieved average accuracy of 0.61. This resulted in a Versatility score of 0.36, this implies with the help of artificial curiosity the model had an improvement of 36% compared to its standard classification ability, which is quite interesting. The null hypothesis was rejected due to negative t-statistic value of -133.767 and p-value being 9.50e-113 which is well the common significance level of 0.05.
