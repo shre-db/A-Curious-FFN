@@ -213,7 +213,11 @@ Thank you for your interest in this project! At this time we are not accepting c
 
 Credits
 -------
-- Data for this project was collected through [scikit-learn](https://github.com/scikit-learn/scikit-learn/tree/main/sklearn) library.
+Data for this project was collected through [scikit-learn](https://github.com/scikit-learn/scikit-learn/tree/main/sklearn) library.
+
+License
+-------
+This project is licensed under the [MIT License](LICENSE.txt) - see the [LICENSE](LICENSE.txt) file for details.
 
 Contact
 -------
