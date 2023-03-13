@@ -1,4 +1,5 @@
 # A-Curious-FFN
+![cover](images/cover.png)
 
 Overview
 --------
@@ -213,7 +214,11 @@ Thank you for your interest in this project! At this time we are not accepting c
 
 Credits
 -------
-Data for this project was collected through [scikit-learn](https://github.com/scikit-learn/scikit-learn/tree/main/sklearn) library.
+- Data for this project was collected through [scikit-learn](https://github.com/scikit-learn/scikit-learn/tree/main/sklearn) library.
+- Cover image for this project was designed using the following tools:
+  - http://alexlenail.me/NN-SVG/
+  - https://www.canva.com/
+
 
 License
 -------
