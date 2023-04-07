@@ -3,7 +3,7 @@
 
 Overview
 --------
-The project focuses on developing an FFN (Feed-Forward Network) model with a unique feature of "Artificial Curiosity". Artificial
+This research project focuses on developing an FFN (Feed-Forward Network) model with a unique feature of "Artificial Curiosity". Artificial
 Curiosity in the context of this project is a process that involves applying affine transformations to input test data and using a
 model trained on regular; non-transformed data to predict on the transformed data. The model then filters the predictions based on
 the least entropy for log-softmax values, specifically softmax values. The choice of the word "curiosity" to describe the process of
