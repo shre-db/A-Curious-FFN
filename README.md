@@ -93,6 +93,8 @@ Methodology
 
 Results
 -------
+![results](images/results.png)
+
 'Accuracy score' was used to calculate 'Versatility score', therefore in the experiment Versatility score is defined as the difference
 between accuracy of curious and non-curious modes of the model. In standard mode the model achieved an average accuracy of 0.25 while the curious mode achieved an average accuracy of 0.61. This resulted in a Versatility score of 0.36, this implies with the help of artificial curiosity the model had an improvement of 36% compared to its standard classification ability, which is quite interesting.
 The null hypothesis was rejected owing to the p-value being 9.50e-113 which is well below the common significance level of 0.05. The negative t-statistic value of -133.77 obtained in the test indicated that the curious mode (second group) had a significantly higher mean accuracy than the standard mode (first group).
