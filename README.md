@@ -18,6 +18,24 @@ training data. This weakness of FFNs is exploited to demonstrate the concept of 
 with 'curious' mode, it can recognize manipulated images, while in 'standard' mode, it cannot. This distinction provides a clear 
 demonstration of the advantages and limitations of the two modes.
 
+Let $S$ be a sequence of one-dimensional tensors $T_1, T_2, T_3, ... T_n$, where a tensor $T_i$ is a collection of softmax probabilities $P(c_1), P(c_2), P(c_3), ... P(c_m)$, where $c_i$ is a class involved in a classification problem.
+
+$S = [T_1, T_2, T_3, ... T_n]$
+
+Let $H$ be a sequence of categorical entropies for each of the tensors.
+
+$H = [H_1(X), H_2(X), H_3(X), ... , H_n(X)]$
+
+Where $H$ is the Shannon's Categorical entropy,
+
+$H(X) = - \displaystyle\sum P(x).log_2(P(x))$
+
+$H(X)_{min}$ = $min(H)$
+
+$H_{minindex} = H[H(X)_{min}]$
+
+$\hat y$ = $argmax(S[H_{minindex}])$
+
 Table of Contents
 -----------------
 1. Primary Objective
